@@ -56,15 +56,15 @@ All testing was performed on a single retail Xbox Series S unit in developer mod
 | `mklink /J` | NTFS junction creation to expose drives over network share |
 | Device Portal (`https://XBOX:11443`) | REST API, file browser, process list, live dumps |
 | `dumpbin /IMPORTS`, `dumpbin /EXPORTS` | Static analysis of PE binaries over the network share |
-| PowerShell | Binary analysis of catalog files over the network share |
-| Python      | Script to automate REST API |
-| Phasor      | Scripting runtime for use on the Console |
+| [PowerShell](https://github.com/PowerShell/PowerShell) | Binary analysis of catalog files over the network share |
+| [Python](https://github.com/python/cpython)      | Script to automate REST API |
+| [Phasor](https://github.com/DanielLMcGuire/Phasor)      | Scripting runtime for use on the Console |
 | `reg query` | Registry enumeration from the SSH shell |
 | `WdApp.exe` | Package manager and ERA lifecycle control (command surface enumeration) |
 | `WdConfig.exe` | Console settings API enumeration |
 | ETL trace analysis | Windows Update pipeline via `S:\Deployment\SoftwareDistribution\` junction |
 | Live process dumps | `GET /api/debug/dump/usermode/live?pid=<pid>` |
-| Ghidra | Analysis of COM interfaces / drivers |
+| [Ghidra](https://github.com/NationalSecurityAgency/ghidra) | Analysis of COM interfaces / drivers |
 
 ### Approach
 
