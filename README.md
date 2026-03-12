@@ -33,11 +33,11 @@ This report documents a static and dynamic analysis of the Xbox Series S interna
 
 **HVCI is deliberately disabled (Section 18).** `IsSecureKernelRunning = 0x0` confirms the Secure Kernel (VTL1) is not running. Code integrity is load-time only, leaving a TOCTOU window once binaries are mapped. This is a deliberate performance tradeoff; the security boundary is the hypervisor partition, not in-partition memory protection.
 
-**NTFS junction exposes the full SystemOS filesystem over the network (Section 1.2).** A single `mklink /J` command from the SSH shell maps `C:\` into the Device Portal file share, making every system binary readable remotely with no additional authentication beyond the dev mode PIN.
+**NTFS junction exposes the full SystemOS filesystem over the network (Section 1.2).** A single `mklink /J` command from the SSH shell maps `C:\` or anything else into the Device Portal file share, making every system binary readable remotely with no additional authentication beyond the dev mode PIN.
 
 **Cross-partition architecture is fully mapped (Sections 4, 14, 26-28).** The ERA game partition communicates with SystemOS exclusively through hypervisor-mediated channels: XVIO ring buffers for I/O, GPA translation for shared memory, HvSocket for IPC, and ALPC port sections for zero-copy framebuffer delivery granted by a parenting "Host OS".
 
-**`Deploy:\` junction bypasses local access restrictions (Section 25).** The Windows Update volume, locally restricted, is accessible in full via the network share path through a junction at `S:\Deployment\SoftwareDistribution\`.
+**`Deploy:\` junction bypasses local access restrictions (Section 25).** The Windows Update volume, locally restricted, is accessible in full via the network share path through a junction at `S:\Deployment\SoftwareDistribution\` via a path like `\\XBOX\DevelopmentFiles\S\`.
 
 ### Scope and Limitations
 
@@ -68,7 +68,7 @@ All testing was performed on a single retail Xbox Series S unit in developer mod
 
 ### Approach
 
-Access was established via the documented Dev Mode SSH interface. The NTFS junction technique (Section 1.2) extended read access from the `D:\DevelopmentFiles` scratch space to the full `C:\` system volume and additional lettered volumes. All analysis was read-only; no system settings were modified (`WdConfig.exe set` was not used). Xbox can run standard x86\_64 Windows console binaries directly via the SSH shell, which was used to run analysis tooling locally.
+Access was established via the documented Dev Mode SSH interface. The NTFS junction technique (Section 1.2) extended read access from the `D:\DevelopmentFiles` scratch space to the full `C:\` system volume and all additional letter volumes. All analysis was read-only; no system settings were modified (`WdConfig.exe set` was not used). Xbox can run standard x86\_64 Windows console binaries directly via the SSH shell, which was used to run analysis tooling locally.
 
 Kernel dumps were not available: the `NoKernelDumps` Device Portal restriction blocks them on retail dev mode. User-mode live process dumps were available and used where relevant.
 
