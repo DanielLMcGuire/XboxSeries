@@ -12,8 +12,8 @@
 ## Clarifications
 
 ```
-ERA = GameOS
-SRA = SystemOS
+ERA = GameOS Partition
+SRA = SystemOS Partition
 HT = Kinect (possibly "Human Tracking")
 Arden = Xbox Series X/S GPU Stack
 NewBe = Arden shader compiler
