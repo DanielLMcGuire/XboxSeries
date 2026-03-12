@@ -7,6 +7,12 @@
 | **OS Build** | `26100.7010.amd64fre.xb_flt_2602ge.260212-1010` |
 | **Access Method** | Dev Mode + SSH + REST API + NTFS file share junction |
 
+## Summary
+
+This report documents a static and dynamic analysis of the Xbox Series S internal architecture, conducted entirely through Microsoft's official developer mode infrastructure. No exploits or policy violations were used; all access was within the bounds of the individual developer program.
+
+This contains details from the highest level components used for gameplay, down to the lowest level system driver components.
+
 ---
 
 ## Clarifications
@@ -15,7 +21,9 @@
 >
 > AI did not do the research, run commands, nor detail which binaries have which capabilities based on imports
 >
-> All contents have been checked numerous times. If you think any point of this is unclear, underdocumented, or just a lie you can feel free to [DM me](https://x.com/DanielMcGu11144) for the original research documents or other evidense based on system files. For reasons you might assume I will not under any circumstances share direct binaries or disassembly output.
+> All contents have been checked numerous times. If you think any point of this is unclear, underdocumented, or just a lie you can feel free to [DM me](https://x.com/DanielMcGu11144) for the original research documents or other evidense based on system files. 
+>
+>For reasons you might assume I will not under any circumstances share direct binaries, disassembly output, or anything considered IP of Microsoft.
 
 ```
 ERA = GameOS Partition
@@ -26,10 +34,6 @@ NewBe = Arden shader compiler
 ```
 
 ---
-
-## Summary
-
-This report documents a static and dynamic analysis of the Xbox Series S internal architecture, conducted entirely through Microsoft's official developer mode infrastructure. No exploits or policy violations were used; all access was within the bounds of the individual developer program.
 
 ### Key Findings
 
