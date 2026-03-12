@@ -241,8 +241,6 @@ Kernel:         xpalk.dll
                 xvmctrl.sys (364KB)
                     ↓
 Hypervisor:     XVIO.SYS 
-                    ↓
-                ERA game partition / Hyper-V root
 ```
 
 ### 4.2 Key Hypervisor Drivers
@@ -1985,7 +1983,7 @@ nuiservice.exe distributes inference results through multiple channels:
 | `Guide.exe` | Auto sign-in trigger |
 | `XboxUI.exe` | Attention/gaze-aware UI |
 | Game titles | Via `NuiVision` WinRT contract (`Windows.Kinect.KinectContract v1`, retail) |
-| xCloud | WSL-hosted streaming client receives NUI state |
+| xCloud | streaming client receives NUI state |
 
 The WinRT contract `Windows.Kinect.KinectContract v1` (see Section 31) is the retail-facing surface for game title access to this pipeline. xCloud receiving NUI state via WSL is notable: it means the streaming client on the console side can use local biometric data (e.g. player presence, attention) even in a cloud-game session.
 
