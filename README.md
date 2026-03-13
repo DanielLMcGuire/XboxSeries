@@ -79,7 +79,7 @@ All testing was performed on a single retail Xbox Series S unit in developer mod
 
 ### Approach
 
-Access was established via the documented Dev Mode SSH interface. The NTFS junction technique (Section 1.2) extended read access from the `D:\DevelopmentFiles` scratch space to the full `C:\` system volume and all additional letter volumes. All analysis was read-only; no system settings were modified (`WdConfig.exe set` was not used). Xbox can run standard x86\_64 Windows console binaries directly via the SSH shell, which was used to run analysis tooling locally.
+Access was established via the documented Dev Mode SSH interface. The NTFS junction technique (Section 1.2) extended read access from the `D:\DevelopmentFiles` scratch space to the full `C:\` system volume and all additional letter volumes. All analysis was read-only; no system settings were modified (`WdConfig.exe set` was not used). Xbox can run standard x86_64 Windows console binaries (compiled with /MT) directly via the SSH shell, which was used to run analysis tooling locally.
 
 Kernel dumps were not available: the `NoKernelDumps` Device Portal restriction blocks them on retail dev mode. User-mode live process dumps were available and used where relevant.
 
