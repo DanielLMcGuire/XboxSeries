@@ -37,17 +37,15 @@ NewBe = Arden shader compiler
 
 ### Key Findings
 
-**XTF toolchain present on all retail consoles (Section 5).** The `J:\` volume on every retail Xbox contains the full Xbox Tools Framework, which I can only assume is Microsoft's developer kit, including the Visual Studio remote debugger and a complete RTSP screen streaming server.
-
 **a Host OS management of drivers exists outside the known SRA/ERA model, see trust model (Sections 4.2, 17.5).** `XVIO.SYS` and `XSraFlt.sys` are loaded directly by the hypervisor before Windows initializes and are absent from all accessible volumes. They cannot be tampered with even under full kernel access which is the primary security boundary.
 
 **HVCI is deliberately disabled (Section 18).** `IsSecureKernelRunning = 0x0` confirms the Secure Kernel (VTL1) is not running. Code integrity is load-time only, leaving a TOCTOU window once binaries are mapped. This is a deliberate performance tradeoff; the security boundary is the hypervisor partition, not in-partition memory protection.
 
 **NTFS junction exposes the full SystemOS filesystem over the network (Section 1.2).** A single `mklink /J` command from the SSH shell maps `C:\` or anything else into the Device Portal file share, making every system binary readable remotely with no additional authentication beyond the dev mode PIN.
 
-**Cross-partition architecture is fully mapped (Sections 4, 14, 26-28).** The ERA game partition communicates with SystemOS exclusively through hypervisor-mediated channels: XVIO ring buffers for I/O, GPA translation for shared memory, HvSocket for IPC, and ALPC port sections for zero-copy framebuffer delivery granted by a parenting "Host OS".
+**Cross-partition architecture is nearly fully mapped (Sections 4, 14, 26-28).** The ERA game partition communicates with SystemOS exclusively through hypervisor-mediated channels: XVIO ring buffers for I/O, GPA translation for shared memory, HvSocket for IPC, and ALPC port sections for zero-copy framebuffer delivery granted by a parenting "Host OS".
 
-**`Deploy:\` junction bypasses local access restrictions (Section 25).** The Windows Update volume, locally restricted, is accessible in full via the network share path through a junction at `S:\Deployment\SoftwareDistribution\` via a path like `\\XBOX\DevelopmentFiles\S\`.
+**`Deploy:\` junction bypasses local access restrictions (Section 25).** The Windows Update volume, locally restricted, is accessible in full via the network share path through a junction at `S:\Deployment\SoftwareDistribution\` via a path like `\\XBOX\DevelopmentFiles\S\`, which is odd considering it is not accessible via SSH using the same user account.
 
 ### Scope and Limitations
 
