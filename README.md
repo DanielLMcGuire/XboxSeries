@@ -635,7 +635,7 @@ http://instance.mgt.xboxlive.com  Instance/session management
 ## 11. Additional Notable Findings
 
 ### WSL Present on Xbox
-`LxssManager` and `lxcore` services are present with `LaunchProtected: 0x2` (Protected Process) and `SeTcbPrivilege`. WSL on Xbox runs with OS-level trust, and based on use is almost certainly powering `Xbox.ConsoleXCloudPlayer` (xCloud game streaming client).
+`LxssManager` and `lxcore` services are present with `LaunchProtected: 0x2` (Protected Process) and `SeTcbPrivilege`. WSL on Xbox runs with OS-level trust, and based on use is almost certainly powering something related to `Xbox.ConsoleXCloudPlayer` (xCloud game streaming client).
 
 ### Xbox-Exclusive System32 Binaries
 Notable DLLs not present in standard Windows:
@@ -1989,7 +1989,7 @@ nuiservice.exe distributes inference results through multiple channels:
 | Game titles | Via `NuiVision` WinRT contract (`Windows.Kinect.KinectContract v1`, retail) |
 | xCloud | streaming client receives NUI state |
 
-The WinRT contract `Windows.Kinect.KinectContract v1` (see Section 31) is the retail-facing surface for game title access to this pipeline. xCloud receiving NUI state via WSL is notable: it means the streaming client on the console side can use local biometric data (e.g. player presence, attention) even in a cloud-game session.
+The WinRT contract `Windows.Kinect.KinectContract v1` (see Section 31) is the retail-facing surface for game title access to this pipeline.
 
 ```
 Camera Sensor Hardware
