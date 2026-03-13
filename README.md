@@ -67,7 +67,7 @@ All testing was performed on a single retail Xbox Series S unit in developer mod
 | Device Portal (`https://XBOX:11443`) | REST API, file browser, process list, live dumps |
 | `dumpbin /IMPORTS`, `dumpbin /EXPORTS` | Static analysis of PE binaries over the network share |
 | [PowerShell](https://github.com/PowerShell/PowerShell) | Binary analysis of catalog files over the network share |
-| [Python](https://github.com/python/cpython)      | Script to automate REST API |
+| [Python](https://github.com/python/cpython)      | [Script to automate REST API](https://github.com/DanielLMcGuire/xboxtools/blob/master/wdp_rest.py) |
 | [Phasor](https://github.com/DanielLMcGuire/Phasor)      | Scripting runtime for use on the Console |
 | `reg query` | Registry enumeration from the SSH shell |
 | `WdApp.exe` | Package manager and ERA lifecycle control (command surface enumeration) |
@@ -75,7 +75,7 @@ All testing was performed on a single retail Xbox Series S unit in developer mod
 | ETL trace analysis | Windows Update pipeline via `S:\Deployment\SoftwareDistribution\` junction |
 | Live process dumps | `GET /api/debug/dump/usermode/live?pid=<pid>` |
 | [Ghidra](https://github.com/NationalSecurityAgency/ghidra) | Analysis of COM interfaces / drivers |
-| [XboxTools](https://github.com/DanielLMcGuire/xboxtools) | My own collection of C/C++ utilities for various things |
+| [XboxTools](https://github.com/DanielLMcGuire/xboxtools) | My own collection of utilities for various things |
 
 ### Approach
 
