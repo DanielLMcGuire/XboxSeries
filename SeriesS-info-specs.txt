@@ -1,0 +1,243 @@
+devtoolsuser@XBOX Q:\Users\DevToolsUser>D:\DevelopmentFiles\bin\amdcpuid
+Vendor: AuthenticAMD
+CPU: Microsoft Xbox Series S CPU
+Cores: 16
+Threads: 16
+
+CPU Feature Flags:
+  FPU   MMX   SSE   SSE2   SSE3   SSSE3   SSE4.1   SSE4.2   AVX
+
+AMD Cache Leaves
+L1 Data Cache: 32 KB (Line Size 64)
+L1 Instruction Cache: 32 KB (Line Size 64)
+L2 Cache: 512 KB (Line Size 64)
+L3 Cache: 8192 KB (Line Size 64)
+
+Cache Sharing Topology:
+L1 Data Cache shared by 2 threads
+L1 Instruction Cache shared by 2 threads
+L2 Unified Cache shared by 2 threads
+L3 Unified Cache shared by 8 threads
+
+Raw Leaves
+Hypervisor max leaf: 0x4000000e
+Hypervisor vendor: Microsoft Xb
+HV interface: 0x31236258
+HV features EAX: 0x0
+HV features EBX: 0x100
+Max standard leaf: 0xd
+Max extended leaf: 0x8000001e
+
+Deterministic Cache (0x8000001D)
+L1 Data Cache: 32 KB
+  Line Size: 64
+  Ways: 8
+  Sets: 64
+L1 Instruction Cache: 32 KB
+  Line Size: 64
+  Ways: 8
+  Sets: 64
+L2 Unified Cache: 512 KB
+  Line Size: 64
+  Ways: 8
+  Sets: 1024
+L3 Unified Cache: 4096 KB
+  Line Size: 64
+  Ways: 16
+  Sets: 4096
+
+Extended topology
+  Thread ID: 4
+  Threads per core: 2
+  Core ID: 2
+  Nodes per processor: 1
+  Node ID: 0
+
+devtoolsuser@XBOX Q:\Users\DevToolsUser>D:\DevelopmentFiles\bin\clockspd
+Core 0 approximate frequency: 1745.47 MHz
+Core 1 approximate frequency: 1745.47 MHz
+Core 2 approximate frequency: 1745.47 MHz
+Core 3 approximate frequency: 1745.44 MHz
+Core 4 approximate frequency: 1745.47 MHz
+Core 5 approximate frequency: 1745.47 MHz
+Core 6 approximate frequency: 1745.47 MHz
+Core 7 approximate frequency: 1745.47 MHz
+Core 8 approximate frequency: 1745.47 MHz
+Core 9 approximate frequency: 1745.47 MHz
+Core 10 approximate frequency: 1745.46 MHz
+Core 11 approximate frequency: 1745.47 MHz
+Core 12 approximate frequency: 1745.47 MHz
+Core 13 approximate frequency: 1745.47 MHz
+Core 14 approximate frequency: 1745.46 MHz
+Core 15 approximate frequency: 1745.47 MHz
+
+devtoolsuser@XBOX Q:\Users\DevToolsUser>D:\DevelopmentFiles\bin\xkrnlid
+=== Kernel Module Enumeration ===
+Loaded kernel modules (112):
+  [  0] Base: 0000000000000000  Size: 00858000  ntoskrnl.exe
+  [  1] Base: 0000000000000000  Size: 00014000  hal.dll
+  [  2] Base: 0000000000000000  Size: 0000B000  kdcom.dll
+  [  3] Base: 0000000000000000  Size: 0000C000  \SystemRoot\System32\drivers\xbsyspsext.sys
+  [  4] Base: 0000000000000000  Size: 0000C000  symcryptk.dll
+  [  5] Base: 0000000000000000  Size: 0000C000  \SystemRoot\System32\drivers\ksecext.sys
+  [  6] Base: 0000000000000000  Size: 00062000  \SystemRoot\System32\drivers\msrpc.sys
+  [  7] Base: 0000000000000000  Size: 00031000  \SystemRoot\System32\drivers\ksecdd.sys
+  [  8] Base: 0000000000000000  Size: 00016000  \SystemRoot\System32\drivers\werkernel.sys
+  [  9] Base: 0000000000000000  Size: 00020000  \SystemRoot\System32\drivers\watchdog.sys
+  [ 10] Base: 0000000000000000  Size: 0000D000  \SystemRoot\System32\drivers\wmilib.sys
+  [ 11] Base: 0000000000000000  Size: 004F2000  \SystemRoot\System32\drivers\dxgkrnl.sys
+  [ 12] Base: 0000000000000000  Size: 000C6000  \SystemRoot\System32\win32k.sys
+  [ 13] Base: 0000000000000000  Size: 00009000  uem.dll
+  [ 14] Base: 0000000000000000  Size: 00018000  lstringkm.dll
+  [ 15] Base: 0000000000000000  Size: 00016000  xci.dll
+  [ 16] Base: 0000000000000000  Size: 00110000  ci.dll
+  [ 17] Base: 0000000000000000  Size: 000E0000  \SystemRoot\System32\drivers\cng.sys
+  [ 18] Base: 0000000000000000  Size: 0000C000  \SystemRoot\System32\drivers\crashdmp.sys
+  [ 19] Base: 0000000000000000  Size: 00035000  \SystemRoot\System32\drivers\xvsc.sys
+  [ 20] Base: 0000000000000000  Size: 0026F000  \SystemRoot\System32\drivers\storport.sys
+  [ 21] Base: 0000000000000000  Size: 0000B000  xpalk.dll
+  [ 22] Base: 0000000000000000  Size: 0002B000  \SystemRoot\System32\drivers\xvio.sys
+  [ 23] Base: 0000000000000000  Size: 0001E000  \SystemRoot\System32\drivers\volmgr.sys
+  [ 24] Base: 0000000000000000  Size: 0001F000  \SystemRoot\System32\drivers\mountmgr.sys
+  [ 25] Base: 0000000000000000  Size: 00095000  \SystemRoot\System32\drivers\fltmgr.sys
+  [ 26] Base: 0000000000000000  Size: 00021000  \SystemRoot\System32\drivers\Kerb3961Kernel.sys
+  [ 27] Base: 0000000000000000  Size: 00037000  \SystemRoot\System32\drivers\ksecpkg.sys
+  [ 28] Base: 0000000000000000  Size: 00014000  \SystemRoot\System32\drivers\condrv.sys
+  [ 29] Base: 0000000000000000  Size: 00016000  \SystemRoot\System32\drivers\pcw.sys
+  [ 30] Base: 0000000000000000  Size: 00368000  \SystemRoot\System32\drivers\ntfs.sys
+  [ 31] Base: 0000000000000000  Size: 00035000  \SystemRoot\System32\drivers\partmgr.sys
+  [ 32] Base: 0000000000000000  Size: 0000B000  \SystemRoot\System32\drivers\volume.sys
+  [ 33] Base: 0000000000000000  Size: 00021000  \SystemRoot\System32\drivers\disk.sys
+  [ 34] Base: 0000000000000000  Size: 00079000  \SystemRoot\System32\drivers\classpnp.sys
+  [ 35] Base: 0000000000000000  Size: 000B8000  \SystemRoot\System32\drivers\netio.sys
+  [ 36] Base: 0000000000000000  Size: 00014000  \SystemRoot\System32\drivers\WppRecorder.sys
+  [ 37] Base: 0000000000000000  Size: 001C4000  \SystemRoot\System32\drivers\ndis.sys
+  [ 38] Base: 0000000000000000  Size: 00038000  \SystemRoot\System32\drivers\pdc.sys
+  [ 39] Base: 0000000000000000  Size: 00018000  \SystemRoot\System32\drivers\cea.sys
+  [ 40] Base: 0000000000000000  Size: 0002E000  \SystemRoot\System32\drivers\xvuc.sys
+  [ 41] Base: 0000000000000000  Size: 0001D000  \SystemRoot\System32\drivers\fileinfo.sys
+  [ 42] Base: 0000000000000000  Size: 000EA000  \SystemRoot\System32\drivers\fvevol.sys
+  [ 43] Base: 0000000000000000  Size: 0004E000  \SystemRoot\System32\drivers\rdyboost.sys
+  [ 44] Base: 0000000000000000  Size: 00012000  \SystemRoot\System32\drivers\xsraflt.sys
+  [ 45] Base: 0000000000000000  Size: 0000F000  \SystemRoot\System32\drivers\fs_rec.sys
+  [ 46] Base: 0000000000000000  Size: 0035C000  \SystemRoot\System32\drivers\tcpip.sys
+  [ 47] Base: 0000000000000000  Size: 0008C000  \SystemRoot\System32\drivers\fwpkclnt.sys
+  [ 48] Base: 0000000000000000  Size: 00012000  \SystemRoot\System32\drivers\msfs.sys
+  [ 49] Base: 0000000000000000  Size: 0001C000  \SystemRoot\System32\drivers\npfs.sys
+  [ 50] Base: 0000000000000000  Size: 00044000  \SystemRoot\System32\drivers\wof.sys
+  [ 51] Base: 0000000000000000  Size: 00036000  \SystemRoot\System32\drivers\cdrom.sys
+  [ 52] Base: 0000000000000000  Size: 00017000  \SystemRoot\System32\drivers\WDFLDR.SYS
+  [ 53] Base: 0000000000000000  Size: 000F1000  \SystemRoot\system32\drivers\Wdf01000.sys
+  [ 54] Base: 0000000000000000  Size: 0000B000  \SystemRoot\System32\Drivers\Null.SYS
+  [ 55] Base: 0000000000000000  Size: 00012000  \SystemRoot\System32\Drivers\xvbus.sys
+  [ 56] Base: 0000000000000000  Size: 0002B000  \SystemRoot\System32\Drivers\hvsocket.sys
+  [ 57] Base: 0000000000000000  Size: 0000C000  \SystemRoot\System32\Drivers\InputXVIOClient.sys
+  [ 58] Base: 0000000000000000  Size: 0001A000  \SystemRoot\System32\DriverStore\FileRepository\basicdisplay.inf_amd64_87c14fbd24041055\BasicDisplay.sys
+  [ 59] Base: 0000000000000000  Size: 00014000  \SystemRoot\System32\DriverStore\FileRepository\basicrender.inf_amd64_217f6f8b92850be3\BasicRender.sys
+  [ 60] Base: 0000000000000000  Size: 0000E000  \SystemRoot\System32\drivers\xvuh.sys
+  [ 61] Base: 0000000000000000  Size: 00010000  \SystemRoot\System32\drivers\USBD.SYS
+  [ 62] Base: 0000000000000000  Size: 00012000  \SystemRoot\System32\drivers\VirtualAudioBus.sys
+  [ 63] Base: 0000000000000000  Size: 0000E000  \SystemRoot\System32\Drivers\xviomoubus.sys
+  [ 64] Base: 0000000000000000  Size: 0001A000  \SystemRoot\system32\DRIVERS\xvnc.sys
+  [ 65] Base: 0000000000000000  Size: 0000C000  \SystemRoot\System32\drivers\xvncbus.sys
+  [ 66] Base: 0000000000000000  Size: 0000C000  \SystemRoot\System32\DriverStore\FileRepository\swenum.inf_amd64_5fe6dbebd8f7c39b\swenum.sys
+  [ 67] Base: 0000000000000000  Size: 00086000  \SystemRoot\System32\drivers\ks.sys
+  [ 68] Base: 0000000000000000  Size: 0000E000  \SystemRoot\System32\Drivers\xviokbdbus.sys
+  [ 69] Base: 0000000000000000  Size: 0000B000  \SystemRoot\System32\drivers\VirtualAudioFunctionSRA.sys
+  [ 70] Base: 0000000000000000  Size: 00012000  \SystemRoot\system32\drivers\ksthunk.sys
+  [ 71] Base: 0000000000000000  Size: 00012000  \SystemRoot\System32\drivers\sraexkmd.sys
+  [ 72] Base: 0000000000000000  Size: 00022000  \SystemRoot\System32\drivers\Xrfs.sys
+  [ 73] Base: 0000000000000000  Size: 0001A000  \SystemRoot\System32\Drivers\Vmnp.SYS
+  [ 74] Base: 0000000000000000  Size: 00045000  \SystemRoot\System32\Drivers\CimFS.SYS
+  [ 75] Base: 0000000000000000  Size: 000B3000  \SystemRoot\system32\drivers\afd.sys
+  [ 76] Base: 0000000000000000  Size: 00013000  \SystemRoot\system32\drivers\TDI.SYS
+  [ 77] Base: 0000000000000000  Size: 00030000  \SystemRoot\System32\drivers\pacer.sys
+  [ 78] Base: 0000000000000000  Size: 00015000  \SystemRoot\System32\drivers\ndiscap.sys
+  [ 79] Base: 0000000000000000  Size: 0002A000  \SystemRoot\System32\Drivers\mup.sys
+  [ 80] Base: 0000000000000000  Size: 0000C000  \SystemRoot\System32\drivers\pspsra.sys
+  [ 81] Base: 0000000000000000  Size: 0008D000  \SystemRoot\system32\DRIVERS\rdbss.sys
+  [ 82] Base: 0000000000000000  Size: 00060000  \SystemRoot\System32\drivers\xvmctrl.sys
+  [ 83] Base: 0000000000000000  Size: 00011000  \SystemRoot\System32\drivers\KMPDC.sys
+  [ 84] Base: 0000000000000000  Size: 0000F000  \SystemRoot\System32\drivers\xviomonc.sys
+  [ 85] Base: 0000000000000000  Size: 0000B000  \SystemRoot\System32\drivers\xtcc.sys
+  [ 86] Base: 0000000000000000  Size: 00013000  \SystemRoot\system32\drivers\nsiproxy.sys
+  [ 87] Base: 0000000000000000  Size: 0000F000  \SystemRoot\System32\drivers\npsvctrig.sys
+  [ 88] Base: 0000000000000000  Size: 00030000  \SystemRoot\System32\Drivers\dfsc.sys
+  [ 89] Base: 0000000000000000  Size: 0005C000  \SystemRoot\system32\DRIVERS\ahcache.sys
+  [ 90] Base: 0000000000000000  Size: 00043000  \SystemRoot\System32\drivers\srakmd_arden.sys
+  [ 91] Base: 0000000000000000  Size: 00329000  \SystemRoot\System32\win32kbase.sys
+  [ 92] Base: 0000000000000000  Size: 00014000  \SystemRoot\System32\drivers\HIDPARSE.SYS
+  [ 93] Base: 0000000000000000  Size: 00049000  \SystemRoot\System32\win32kmin.sys
+  [ 94] Base: 0000000000000000  Size: 00123000  \SystemRoot\System32\drivers\dxgmms2.sys
+  [ 95] Base: 0000000000000000  Size: 00052000  \SystemRoot\System32\cdd.dll
+  [ 96] Base: 0000000000000000  Size: 0003C000  \SystemRoot\system32\drivers\wcifs.sys
+  [ 97] Base: 0000000000000000  Size: 00077000  \SystemRoot\system32\drivers\UnionFS.sys
+  [ 98] Base: 0000000000000000  Size: 0002D000  \SystemRoot\system32\drivers\bindflt.sys
+  [ 99] Base: 0000000000000000  Size: 0001A000  \SystemRoot\system32\drivers\lltdio.sys
+  [100] Base: 0000000000000000  Size: 0001E000  \SystemRoot\system32\drivers\rspndr.sys
+  [101] Base: 0000000000000000  Size: 000D5000  \SystemRoot\system32\DRIVERS\nwifi.sys
+  [102] Base: 0000000000000000  Size: 000E2000  \SystemRoot\system32\DRIVERS\mrxsmb.sys
+  [103] Base: 0000000000000000  Size: 0005D000  \SystemRoot\system32\DRIVERS\mrxsmb20.sys
+  [104] Base: 0000000000000000  Size: 001F2000  \SystemRoot\System32\Drivers\HTTP.sys
+  [105] Base: 0000000000000000  Size: 00063000  \SystemRoot\System32\DRIVERS\srvnet.sys
+  [106] Base: 0000000000000000  Size: 00016000  \SystemRoot\System32\drivers\tcpipreg.sys
+  [107] Base: 0000000000000000  Size: 000FA000  \SystemRoot\System32\DRIVERS\srv2.sys
+  [108] Base: 0000000000000000  Size: 00017000  \SystemRoot\system32\drivers\mmcss.sys
+  [109] Base: 0000000000000000  Size: 0000C000  \SystemRoot\system32\drivers\XRmnt.sys
+  [110] Base: 0000000000000000  Size: 0002C000  \SystemRoot\System32\drivers\tunnel.sys
+  [111] Base: 0000000000000000  Size: 0001F000  \SystemRoot\System32\drivers\monitor.sys
+
+=== Device Probe ===
+  [+] \\.\xvmctrl - OPEN
+  [!] \\.\xvioc - failed (2)
+  [!] \\.\xvbus - failed (2)
+  [!] \\.\XVIO - failed (2)
+  [!] \\.\xvmctrl0 - failed (2)
+
+devtoolsuser@XBOX Q:\Users\DevToolsUser>C:\Windows\System32\xraytool
+
+XRay - Xbox console performance tool.
+
+System OS:
+Up Time 2 days:1 hours:9 minutes:44 seconds
+TotalMem      6400 MB
+Available     116 MB
+CommitTotal   6681256 KB
+SystemCache   109272 KB
+KernelP       68812 KB
+KernelNP      101876 KB
+Handles       38925
+Threads       998
+Processes     94
+
+Host OS:
+Available     108 MB
+KernelP       2136 KB
+KernelNP      28776 KB
+#PPoolAllocs  0/s
+#NPPoolAllocs 12/s
+Handles       258
+Threads       93
+Processes     5
+SysCalls      4
+CtxtSwitches  276/s
+XVMM MemHandles    SRA 324 ERA 0
+XVMM SharedGPASlot SRA 9 ERA 0
+
+IO (176984765 ms):
+Wired Tx      0 Rx      0 (KB/s)
+WiFi  Tx      2 Rx      1 (KB/s)
+Disk  Rd      0 Wr      0 (KB/s)
+Flash Rd      0 Wr      0 (KB/s)
+
+Hypervisor LP utilization:
+LP0    LP1    LP2    LP3    LP4    LP5    LP6    LP7
+1.37  0.57  0.77  1.52  0.76  0.33  0.85  0.17
+
+Hypervisor Host OS VP utilization:
+VP0    VP1    VP2    VP3    VP4    VP5    VP6    VP7
+100.00  100.00  100.00  100.00  100.00  100.00  100.00  100.00
+
+Hypervisor System OS VP utilization:
+VP0    VP1    VP2    VP3    VP4    VP5    VP6    VP7
+0.50  0.30  0.00  0.97  0.00  0.00  0.00  0.00
