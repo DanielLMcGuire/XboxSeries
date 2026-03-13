@@ -782,6 +782,7 @@ Status: **actively running** (`Start: 0x0`, boot-start). Access denied at the ke
 7. **`xvmctrl.sys` IOCTL surface** live kernel dump blocked (`NoKernelDumps` restriction on retail dev mode); IOCTL dispatch table not yet enumerated
 8. **ERA partition GUID** not exposed through any accessible registry path; would be visible in kernel dump (blocked)
 9. **`N:\EtwPlus\` contents** actively hidden by a kernel filesystem filter driver; directory listings return empty despite confirmed write activity. The filter driver identity has not been determined (see Section 3.2)
+10. Host OS as a whole, it's not even entirely certain what it does.
 
 ---
 
